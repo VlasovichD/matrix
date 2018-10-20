@@ -22,18 +22,21 @@ namespace Matrix_Threads2
 
             while (true)
             {
+                //Generating a first chain with random length
                 if (chainPozition - chainLength == 40)
                 {
                     chainPozition = 0;
                     chainLength = rand.Next(3, 12);
                 }
-
+                
+                //Generating a second chain with random length
                 if (chainPozition2 - chainLength2 == 40)
                 {
                     chainPozition2 = 0;
                     chainLength2 = rand.Next(3, 12);
                 }
                
+                //Blocking other threads while recalculating a position of chains in current thread
                 lock (block)
                 {
                     for (int i = 0; i < 40; i++)
