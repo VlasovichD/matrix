@@ -20,12 +20,14 @@ namespace Matrix_Threads
 
             while (true)
             {
+                //Generating a new chain with random length
                 if (chainPozition - chainLength == 40)
                 {
                     chainPozition = 0;
                     chainLength = rand.Next(3, 15);
                 }
-
+                
+                //Blocking other threads while recalculating a position of chain in current thread
                 lock (block)
                 {
                     for (int i = 0; i < 40; i++)
