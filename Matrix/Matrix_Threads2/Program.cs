@@ -14,6 +14,7 @@ namespace Matrix_Threads2
 
             Matrix myMatrix = new Matrix();
 
+            //Creating and starting a 40 threads of chains
             for (int i = 0; i < 40; i++)
             {
                 new Thread(myMatrix.MakeMatrix).Start(i * 2);
