@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8C496C90-810F-425A-96CE-AE73FC250108}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lv2_13_ConsoleApp2</RootNamespace>
-    <AssemblyName>Lv2_13_ConsoleApp2</AssemblyName>
+    <RootNamespace>Matrix_Threads2</RootNamespace>
+    <AssemblyName>Matrix_Threads2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
